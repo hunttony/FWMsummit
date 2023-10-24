@@ -60,8 +60,8 @@ body{
 }
 
 .h2:hover{
-  cursor:pointer;
-  color: gold !important;
+  cursor: pointer;
+  color: gold;
   transform: scale(1.2);
 
 }
@@ -70,7 +70,7 @@ body{
   padding: 1px;
   border-radius: 10px;
   
-  background-image: url("/images/suit_city.svg");
+  background-image: url("/suit and city.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 
@@ -86,7 +86,7 @@ body{
   border-radius: 10px;
   color:#FC0;
   text-align: center;
-  text-shadow: rgb(60, 255, 60) 0px 0 10px;  
+  text-shadow: rgb (60, 255, 60) 0px 0 10px;  
   font-size: 30px;
   font-family: Tahoma;
 }
@@ -97,14 +97,14 @@ body{
   border-width: 2px; */
   height: 100px;
   border-radius: 10px;
-  color:rgb(60, 255, 60);
+  color: rgb (60, 255, 60);
   text-align: left;
   text-shadow: #FC0 0px 0 10px;  
   font-size:35px;
   margin-left: 110px;
   padding: 30px;
   width: fit-content;
-  background-color: rgb(0,0,0,0.5);
+  background-color: rgb (0,0,0,0.5);
   
   
 }
@@ -121,7 +121,7 @@ body{
   height: 50px;
   border-radius: 10px;
   text-align: center;
-  text-shadow: 2.5px 2.5px rgb(60, 255, 60);  
+  text-shadow: 2.5px 2.5px rgb (60, 255, 60);  
   font-size: 30px;
   font-family: Tahoma;
   color: black
@@ -130,14 +130,14 @@ body{
   padding: 2.5px;
   border-radius: 10px;
 
-  border-color: rgb(60, 255, 60);
+  border-color: rgb (60, 255, 60);
   border-style: dashed;
   border-width: 1px;
   
 }
 
 .end-section1{
-  border-color: rgb(60, 255, 60);
+  border-color: rgb (60, 255, 60);
   border-style: dashed;
   border-width: 1px;
   height: 100px;
@@ -145,7 +145,7 @@ body{
 }
 
 .end-section2{
-  border-color: rgb(60, 255, 60);
+  border-color: rgb (60, 255, 60);
   border-style: dashed;
   border-width: 1px;
   height: 100px;
@@ -153,7 +153,7 @@ body{
 }
 
 .end-section3{
-  border-color: rgb(60, 255, 60);
+  border-color: rgb (60, 255, 60);
   border-style: dashed;
   border-width: 1px;
   height: 100px;
@@ -194,13 +194,13 @@ body{
 .dropdown-menu a {
   display: block;
   padding: 10px 15px;
-  background-color: rgba(255, 243, 138, 0.3);
+  background-color: rgba (255, 243, 138, 0.3);
   text-decoration: none;
   color: #65ff3e;
 }
 
-.dropdown-menu a:hover {
-  background-color: rgba(255, 230, 0, 0.6);
+.dropdown-menu a: hover {
+  background-color: rgba (255, 230, 0, 0.6);
   color: black;
 }
 
