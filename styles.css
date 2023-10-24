@@ -1,0 +1,236 @@
+body{
+  background-color: black;
+  color: white;
+  border-width: 1px;
+  border-radius: 10px;
+
+
+  /* will add this to appropriate elements */
+  
+}
+
+
+.header{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 10px;  
+  transition-duration: 10ms; 
+  
+}
+
+.bar2 {
+  height: 1px; /* Height of the horizontal bar */
+  background-color: rgb(255, 208, 0);
+  margin-top: 5px;
+  margin-bottom: 0px; /* Color of the bar (you can change this) */
+}
+
+.h1{
+  font-size: 20px;
+  font-family: "cursive";
+  font-weight: bold;
+  color: rgb(0, 255, 0);
+  /*text-shadow: 1px 1px 20px rgb(255, 255, 255); */
+  transition-duration: 10ms;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0px;
+  transition: transform 0.5s ease;
+  
+}
+
+.h1:hover{
+  cursor:pointer;
+  color: gold !important;
+  transform: scale(1.2);
+  
+}
+
+.h2{
+  font-size: 12px;
+  font-family: "Tahoma";
+  color: rgb(0, 255, 0);
+  margin: 0px;
+  margin-left: 0px;
+  transition: transform 0.5s ease;
+}
+
+.h2:hover{
+  cursor:pointer;
+  color: gold !important;
+  transform: scale(1.2);
+
+}
+.Start{
+
+  padding: 1px;
+  border-radius: 10px;
+  
+  background-image: url("/images/suit_city.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  /*border-color: rgb(60, 255, 60);
+  border-style: dashed;
+  border-width: 1px; */
+  height: 100%;
+}
+
+.start-section1{
+  
+  height: 100px;
+  border-radius: 10px;
+  color:#FC0;
+  text-align: center;
+  text-shadow: rgb(60, 255, 60) 0px 0 10px;  
+  font-size: 30px;
+  font-family: Tahoma;
+}
+
+.start-section2{
+  /*border-color: rgb(255, 226, 60);
+  border-style: solid;
+  border-width: 2px; */
+  height: 100px;
+  border-radius: 10px;
+  color:rgb(60, 255, 60);
+  text-align: left;
+  text-shadow: #FC0 0px 0 10px;  
+  font-size:35px;
+  margin-left: 110px;
+  padding: 30px;
+  width: fit-content;
+  background-color: rgb(0,0,0,0.5);
+  
+  
+}
+
+.animation-text{
+  font-family: cursive;
+  filter: url(#threshold) blur(0.6px);
+  position: absolute;
+
+}
+
+.start-section3{
+  
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  text-shadow: 2.5px 2.5px rgb(60, 255, 60);  
+  font-size: 30px;
+  font-family: Tahoma;
+  color: black
+}
+.End{
+  padding: 2.5px;
+  border-radius: 10px;
+
+  border-color: rgb(60, 255, 60);
+  border-style: dashed;
+  border-width: 1px;
+  
+}
+
+.end-section1{
+  border-color: rgb(60, 255, 60);
+  border-style: dashed;
+  border-width: 1px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.end-section2{
+  border-color: rgb(60, 255, 60);
+  border-style: dashed;
+  border-width: 1px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.end-section3{
+  border-color: rgb(60, 255, 60);
+  border-style: dashed;
+  border-width: 1px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+/* 3 bar drop menu */
+
+.menu-icon {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 24px;
+}
+
+.bar {
+  height: 4px;
+  width: 24px;
+  background-color: #4eff37;
+}
+
+.dropdown-menu {
+  position: fixed;
+  top: 50px;
+  right: 15px;
+  display: none;
+  flex-direction: column;
+  border: 1px solid #2bff00;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  background-color: rgba(255, 243, 138, 0.3);
+  text-decoration: none;
+  color: #65ff3e;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(255, 230, 0, 0.6);
+  color: black;
+}
+
+/* Date and Time Animation for Start section */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+
+
+/* #container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+} */
+
+#text1,
+#text2 {
+    position: absolute;
+    /* width: 100%;
+    display: inline-block; */
+
+    font-family: "Raleway", sans-serif;
+    font-size: 30pt;
+
+    text-align: center;
+
+    user-select: none;
+}
