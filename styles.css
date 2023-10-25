@@ -278,3 +278,45 @@ body{
   color:rgb(0, 255, 0)
 
   }
+
+@media (max-width: 768px) {
+  /* Add your mobile-specific styles here */
+  body {
+    font-size: 16px; /* Increase font size for better readability on small screens */
+  }
+
+  .header {
+    padding: 10px; /* Reduce padding to save space on smaller screens */
+  }
+
+  .menu {
+    display: none; /* Hide the menu on small screens and use a mobile-friendly menu icon */
+  }
+
+  .start-section1{
+  
+  height: 20px;
+  border-radius: 10px;
+  color:#FC0;
+  text-align: center;
+  text-shadow: rgb(60, 255, 60) 0px 0 10px;  
+  font-size: 20px;
+  font-family: Tahoma;
+  
+}
+
+.start-section2{
+  height: 100px;
+  border-radius: 10px;
+  color:#FC0;
+  text-align: center;
+  text-shadow: black 0px 0 8px;  
+  font-size: 20px;
+  font-family: Tahoma;
+  color: rgb(255, 255, 255);
+  transition-duration: 10ms;
+  transition: transform 0.5s ease;
+  margin-bottom: 30px;
+  margin-top: 30px
+}
+}
