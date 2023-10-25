@@ -22,7 +22,14 @@ body{
 }
 
 .bar2 {
-  height: 1px; /* Height of the horizontal bar */
+  height: 2px; /* Height of the horizontal bar */
+  background-color: rgb(255, 208, 0);
+  margin-top: 5px;
+  margin-bottom: 0px; /* Color of the bar (you can change this) */
+}
+
+.bar3 {
+  height: 2.5px; /* Height of the horizontal bar */
   background-color: rgb(255, 208, 0);
   margin-top: 5px;
   margin-bottom: 0px; /* Color of the bar (you can change this) */
@@ -165,21 +172,22 @@ body{
 
   /* ******** END ********** */
 .End{
-  padding: 2.5px;
-  border-radius: 10px;
+  padding: 1px;
+  /*border-radius: 10px;
 
   border-color: rgb(60, 255, 60);
   border-style: dashed;
-  border-width: 1px;
+  border-width: 1px; */
   
 }
 
 .end-section1{
-  border-color: rgb(60, 255, 60);
+  /*border-color: rgb(60, 255, 60);
   border-style: dashed;
-  border-width: 1px;
+  border-width: 1px;*/
   height: 100px;
   border-radius: 10px;
+  background-color: rgb(56, 56, 56);
 }
 
 .end-section2{
@@ -215,7 +223,7 @@ body{
 .bar {
   height: 4px;
   width: 24px;
-  background-color: #4eff37;
+  background-color: gold;
 }
 
 .dropdown-menu {
@@ -224,7 +232,7 @@ body{
   right: 15px;
   display: none;
   flex-direction: column;
-  border: 1px solid #2bff00;
+  border: 1px solid gold;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -232,13 +240,13 @@ body{
 .dropdown-menu a {
   display: block;
   padding: 10px 15px;
-  background-color: rgba(255, 243, 138, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
   color: #65ff3e;
 }
 
 .dropdown-menu a:hover {
-  background-color: rgba(255, 230, 0, 0.6);
+  background-color: rgba(255, 230, 0, 0.7);
   color: black;
 }
 
@@ -279,44 +287,4 @@ body{
 
   }
 
-@media (max-width: 768px) {
-  /* Add your mobile-specific styles here */
-  body {
-    font-size: 16px; /* Increase font size for better readability on small screens */
-  }
 
-  .header {
-    padding: 10px; /* Reduce padding to save space on smaller screens */
-  }
-
-  .menu {
-    display: none; /* Hide the menu on small screens and use a mobile-friendly menu icon */
-  }
-
-  .start-section1{
-  
-  height: 15px;
-  border-radius: 10px;
-  color:#FC0;
-  text-align: center;
-  text-shadow: rgb(60, 255, 60) 0px 0 10px;  
-  font-size: 20px;
-  font-family: Tahoma;
-  
-}
-
-.start-section2{
-  height: 100px;
-  border-radius: 12px;
-  color:#FC0;
-  text-align: center;
-  text-shadow: black 0px 0 8px;  
-  font-size: 20px;
-  font-family: Tahoma;
-  color: rgb(255, 255, 255);
-  transition-duration: 10ms;
-  transition: transform 0.5s ease;
-  margin-bottom: 30px;
-  margin-top: 30px
-}
-}
