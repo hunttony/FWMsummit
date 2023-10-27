@@ -3,21 +3,17 @@ body{
   color: white;
   border-width: 1px;
   border-radius: 10px;
-
-
-  /* will add this to appropriate elements */
-  
 }
 
 
 .header{
-  background-color: black;
+  background-color: rgb(70, 70, 70);
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 5px;
   font-size: 20px;
   border-radius: 10px;  
-  transition-duration: 10ms; 
+  transition-duration: 10ms;
   
 }
 
@@ -40,45 +36,63 @@ body{
   font-family: "cursive";
   font-weight: bold;
   color: rgb(0, 255, 0);
-  /*text-shadow: 1px 1px 20px rgb(255, 255, 255); */
-  transition-duration: 10ms;
+  text-shadow: 1px 1px 20px rgb(255, 208, 0);
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: 0px;
-  transition: transform 0.5s ease;
+  margin-left: 2.5%;
+  width: 60%;
   
-}
-
-.h1:hover{
-  cursor:pointer;
-  color: gold !important;
-  transform: scale(1.2);
-  
-}
+  } 
 
 .h2{
   font-size: 18px;
   font-family: "Tahoma";
-  color: rgb(0, 255, 0);
-  margin: 0px;
-  margin-left: 0px;
-  transition: transform 0.5s ease;
-}
+  color: rgb(0, 255, 0);  
+  text-decoration:none;
 
-.h2:hover{
-  cursor:pointer;
-  color: gold !important;
-  transform: scale(1.2);
-  
 
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
-/* ******** END ********** */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff5733; /* Change to your desired hover color */
+}
+
+/* ******** ABOVE THE FOLD ********** */
 .Start{
 
-  padding: 1px;
+  padding: 5px;
   border-radius: 10px;
   
   background-image: url("suit and city.jpg");
@@ -170,7 +184,7 @@ body{
 
 
 
-  /* ******** END ********** */
+  /* ******** BELOW THE FOLD ********** */
 .End{
   padding: 1px;
   /*border-radius: 10px;
