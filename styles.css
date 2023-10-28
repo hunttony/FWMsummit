@@ -485,6 +485,13 @@ body{
   margin-bottom: 20px; 
   z-index: 2;
 }
-    
+
+  .h1 button{
+    background-color: rgb(255, 208, 0);
+    border-radius: 10px;
+    margin-top:auto !important;
+    height: 10vh;
+    width: 20vw;
+  }  
 /* Your CSS styles for phone screens go here */
   }
