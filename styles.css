@@ -462,6 +462,10 @@ body{
   text-shadow: 1px 1px 20px #ffc813;
 }
 
+    .h1{
+      font-size: 2.5vw;
+    }
+
 .h2{
   font-size: 18px;
   font-family: "Tahoma";
