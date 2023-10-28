@@ -6,12 +6,18 @@
     <title>The Finance & Wealth Mastery Summit</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
+    <script src="/scripts/message_morph.js" defer></script>
 </head>
 <body>
 
+    <!------   Header   ------>
   <div class="header">
+
     <div class="h1"> The Finance & Wealth Mastery Summit</div>
-    <div class="h2"> 
+             
+    <div class="regular-menu">
+
+      <div class="h2">        <!------   regular menu   ------> 
       <nav class="navbar">
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -19,58 +25,84 @@
             <li><a href="#">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
-    </nav>
-    
+      </nav> 
+    </div>   
     </div>
 
+    <div class="hamburger-menu" >   
+              <!------   phone menu   ------>
+      <div class="menu-icon" onclick="toggleDropdown()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
 
-    <div class="menu-icon" onclick="toggleDropdown()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+      <div class="dropdown-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="https://www.eventbrite.com/e/the-finance-wealth-mastery-summit-tickets-724272647987?aff=oddtdtcreator" target="_blank">Tickets</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="bar2"></div>
+       <!------   regular menu   ------> 
     </div>
 
-    <div class="dropdown-menu">
-      <a href="index.html">Home</a>
-      <a href="https://www.eventbrite.com/e/the-finance-wealth-mastery-summit-tickets-724272647987?aff=oddtdtcreator">Tickets</a>
-      <a href="#">About</a>
-      <a href="#">Contact us</a>
-    </div>
   </div>  
 
   <div class="bar2"></div>
   
 
-
+    <!------   above the fold   ------>
   <div class="Start">
 
+    
+    <div class="video-container">
+      <video class="video" autoplay loop muted  playsinline autoplay muted loop poster="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F604949279%2F155494940294%2F1%2Foriginal.20230924-013348?w=940&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C342%2C2046%2C1023&s=2b7f5e081cc13bd5774679a27e13d307">
+          <source src="/images/Houston_skyline.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <video class="video" autoplay loop muted>
+          <source src="/images/New_York_skyline.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <!-- Add more videos as needed -->
+
+      <div class="text-overlay">
+          <h1>"It's Time to Master Your Wealth"</h1>
+          <p>Saturday, Febuary 3rd from 10am to 5pm</p>
+
+          <svg id="filters">
+            <defs>
+                <filter id="threshold">
+                    <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                          0 1 0 0 0
+                          0 0 1 0 0
+                          0 0 0 255 -140" />
+                </filter>
+            </defs>
+          </svg>
+
+      </div>
+  </div>
+
     <div class="start-section1">
-      <p>"It's Time to Master Your Wealth"</p>
+      <p></p>
 
     </div>
     <div class="start-section2">
-      <p class="datetime">Saturday, November 18th from 10am to 2pm</p> 
-
-      
+      <p class="datetime"></p>      
     </div>
 
     <div class="start-section3">
 
       <div id="container">
-        <span id="text1"></span>
-        <span id="text2"></span>
+        <a id="text1"></a>
+        <a id="text2"></a>
       </div>
-      <svg id="filters">
-        <defs>
-            <filter id="threshold">
-                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
-                      0 1 0 0 0
-                      0 0 1 0 0
-                      0 0 0 255 -140" />
-            </filter>
-        </defs>
-    </svg>
-
+     
     </div>
     
     
@@ -83,6 +115,8 @@
   </div>
 
   <div class="bar2"></div>
+
+  <!------   below the fold   ------>
 
   <div class="End">
 
