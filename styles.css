@@ -1,5 +1,5 @@
 body{
-  background-image: url("Usdollar100front.jpg");
+  background-image: url("/images/Usdollar100front.jpg");
  
   background-size: cover;
   color: white;
@@ -12,19 +12,18 @@ body{
 .h1 button{
   background-color: rgb(255, 208, 0);
   border-radius: 10px;
-  margin-top:auto !important;
-  height: 4vh;
-  width: 20vw;
-  
+  height: 6vw;
+  width: 10vw;
+  margin-top: auto !important;
   
 }
 
 .h1 button:hover{
-  box-shadow: 2px 2px 7.5px rgb(30, 255, 0);
+  box-shadow: 0 0 10px rgb(30, 255, 0);
 }
 
 .h1 button:onclick{
-  box-shadow: 2px 2px 15px rgb(255, 230, 0);
+  box-shadow: 1px 1px 15px rgb(255, 230, 0);
 }
 
 
@@ -33,7 +32,7 @@ body{
   top:0;
   position: fixed;
   width: 100%;
-  height: 15vh;
+  height: fit-content;
   
   background-color: rgb(0, 0, 0);
   color: white;
@@ -41,7 +40,7 @@ body{
   font-size: 4vw; 
   margin-bottom: 20px; 
   z-index: 2;
-  opacity: .87;
+  opacity: .90;
 }
 
 .bar2 {
@@ -59,22 +58,21 @@ body{
 }
 
 .h1{  
-  display: grid;
-  grid-template-columns: 10fr 4fr;
+  display: flex;
+  justify-content: space-between; /* This will push the title to the left and the button to the right */
   font-family: "Verdana";
   font-weight: bold;
   color: rgb(0, 255, 0);
   text-shadow: 1px 1px 5px white;
   height: fit-content;
-  
-  
+  align-items: center;
   padding: 5px;
   } 
 
   .h1 p{
-    font-size: 2.5vw;
-    width: 50%;
-    margin-top:auto !important;
+    font-size: 3vw;
+    margin-top: auto !important;
+    width: 40%;
   }
 
 
@@ -141,7 +139,7 @@ body{
 .Start{
  
   background-repeat: no-repeat;
-  height:600px;
+  height:fit-content;
   background-color: rgb(0, 0, 0);
   opacity: .87;
   position: relative;
@@ -301,6 +299,7 @@ body{
   /* ******** BELOW THE FOLD ********** */
 .End{
   padding: 1px;
+  
   background-color: black;
   opacity: .87;
   /*border-radius: 10px;
@@ -315,26 +314,33 @@ body{
   /*border-color: rgb(60, 255, 60);
   border-style: dashed;
   border-width: 1px;*/
-  height: 100%;
+  height: fit-content;
   background-color: rgb(56, 56, 56);
-  font-size: 50pt;
+  font-size: 8vw;
   text-align: center;
 }
 
 .end-section2{
-  border-color: rgb(60, 255, 60);
-  border-style: dashed;
-  border-width: 1px;
-  height: 100px;
-  border-radius: 10px;
+  
+  height: 100px;  
+  text-align: center;
+  margin: 0 auto;
+  background-color: red;
+  
+  
 }
 
 .end-section3{
-  border-color: rgb(60, 255, 60);
-  border-style: dashed;
-  border-width: 1px;
-  height: 100px;
-  border-radius: 10px;
+  height: 20px;  
+  text-align: center;
+  margin: 0 auto;
+  background-color: black;
+  width: fit-content;
+}
+
+.end-section img{
+  width: 100px;
+  
 }
 
 
@@ -382,89 +388,94 @@ body{
       display: block;
     }
 
+/* Reset some default styles */
+
+/* Hamburger menu styles */
 .menu-icon {
-  position: fixed;
-  top: 15px;
-  right: 15px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  margin: 20px;
+  
 }
 
 .bar {
+  width: 30px;
   height: 4px;
-  width: 24px;
-  background-color: gold;
-  margin-top: auto;
+  background-color: #fff;
+  transition: 0.4s;
 }
 
-.dropdown-menu {
+.mobile-menu {
   position: fixed;
-  top: 12vw;
-  right: 15px;
-  display: none;
-  flex-direction: column;
-  border: 1px solid gold;
-  border-radius: 5px;
-  overflow: hidden;
+  top: 0;
+  right: -300px; /* Start off-screen */
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.4s;
+  z-index: 2;
+  padding: 20px;
 }
 
-.dropdown-menu a {
-  display: block;
-  padding: 10px 15px;
-  background-color: rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-  color: #65ff3e;
-  font-size: 4vw;
-}
-
-.dropdown-menu a:hover {
-  background-color: rgba(255, 230, 0, 0.7);
-  color: black;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.nav-links {
+.mobile-menu ul {
   list-style: none;
-  display: flex;
-  margin: 0;
   padding: 0;
 }
 
-.nav-links li {
-  margin-right: 20px;
+.mobile-menu li {
+  margin-bottom: 20px;
 }
 
-.nav-links li:last-child {
-  margin-right: 0;
-}
-
-.nav-links a {
+.mobile-menu a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 18px;
+  transition: color 0.2s;
 }
 
-.nav-links a:hover {
- 
-  text-shadow: 1px 1px 20px #ffc813;
+.mobile-menu a:hover {
+  color: #ffcc00;
 }
 
-.h1{
-      font-size: 10vw;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
 }
+
+/* Content styles */
+.content {
+  padding: 20px;
+}
+
+/* Menu open state */
+.menu-open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.menu-open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu-open .mobile-menu {
+  right: 0;
+}
+
+.menu-open .overlay {
+  display: block;
+}
+
 
 .h2{
   font-size: 18px;
@@ -475,23 +486,57 @@ body{
 }
 
 .header{
+ 
+  top:0;
   position: fixed;
   width: 100%;
-  height: 100px;
+  height: fit-content;  
   background-color: rgb(0, 0, 0);
   color: white;
   text-align: left;
-  font-size: 5vw; 
+  font-size: 12px; 
   margin-bottom: 20px; 
   z-index: 2;
+  opacity: .90;
 }
+
+.h1{  
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  font-family: "Verdana";
+  font-weight: bold;
+  color: rgb(0, 255, 0);
+  text-shadow: 1px 1px 5px white;
+  height: fit-content;
+  
+  
+  padding: 5px;
+  } 
+
+  .h1 p{
+    font-size: 4vw;
+    width: 95%;
+    margin-top:auto !important;
+  }
 
   .h1 button{
     background-color: rgb(255, 208, 0);
     border-radius: 10px;
-    margin-top:auto !important;
-    height: 10vh;
-    width: 20vw;
-  }  
+    height: 6vw;
+    width: 10vw;
+    margin-top: auto !important;
+    
+  }
+
+  .Start{
+ 
+    background-repeat: no-repeat;
+    height:fit-content;
+    background-color: rgb(0, 0, 0);
+    opacity: .87;
+    position: relative;
+       
+  }
+    
 /* Your CSS styles for phone screens go here */
   }
